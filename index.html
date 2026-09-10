@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BESPOKE — Premium Streetwear</title>
+  <meta name="description" content="BESPOKE — Premium contemporary streetwear.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= ANNOUNCEMENT BAR ================= -->
+  <div class="announcement">
+    <p>FREE SHIPPING ON ORDERS ABOVE PKR 5,000</p>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+
+    <div class="nav-container">
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        ☰
+      </button>
+
+      <a href="#" class="logo">BESPOKE</a>
+
+      <nav class="desktop-nav">
+        <a href="#new-arrivals">NEW ARRIVALS</a>
+        <a href="#shop">SHOP</a>
+        <a href="#collections">COLLECTIONS</a>
+        <a href="#best-sellers">BEST SELLERS</a>
+      </nav>
+
+      <div class="nav-icons">
+
+        <button id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="22" y2="22"></line>
+          </svg>
+        </button>
+
+        <button id="accountBtn" aria-label="Account">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+          </svg>
+        </button>
+
+        <button id="cartBtn" class="cart-button" aria-label="Cart">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+            <circle cx="10" cy="20" r="1"></circle>
+            <circle cx="18" cy="20" r="1"></circle>
+          </svg>
+          <span id="cartCount">0</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#new-arrivals">NEW ARRIVALS</a>
+      <a href="#shop">SHOP</a>
+      <a href="#collections">COLLECTIONS</a>
+      <a href="#best-sellers">BEST SELLERS</a>
+      <a href="#footer">CONTACT</a>
+    </div>
+
+  </header>
+
+
+  <!-- ================= SEARCH OVERLAY ================= -->
+  <div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+      <button id="closeSearch">×</button>
+
+      <p>SEARCH BESPOKE</p>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+      >
+
+      <div id="searchResults"></div>
+    </div>
+
+  </div>
+
+
+  <!-- ================= HERO ================= -->
+  <main>
+
+    <section class="hero">
+
+      <img
+        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2200&q=90"
+        alt="Bespoke Fashion Collection"
+      >
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">THE NEW STANDARD</p>
+
+        <h1>DEFINE<br>YOURSELF.</h1>
+
+        <p class="hero-description">
+          Contemporary essentials designed for those
+          who don't follow the ordinary.
+        </p>
+
+        <a href="#new-arrivals" class="btn btn-white">
+          SHOP NEW ARRIVALS
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= MARQUEE ================= -->
+    <section class="marquee">
+      <div class="marquee-track">
+        <span>BESPOKE</span>
+        <span>NEW SEASON</span>
+        <span>PREMIUM QUALITY</span>
+        <span>MADE FOR YOU</span>
+        <span>BESPOKE</span>
+        <span>NEW SEASON</span>
+        <span>PREMIUM QUALITY</span>
+        <span>MADE FOR YOU</span>
+      </div>
+    </section>
+
+
+    <!-- ================= SHOP BY CATEGORY ================= -->
+    <section class="section category-section" id="shop">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow dark">EXPLORE</p>
+          <h2>SHOP BY CATEGORY</h2>
+        </div>
+
+        <a href="#" class="text-link">VIEW ALL →</a>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <a href="#" class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85"
+            alt="T-Shirts"
+          >
+
+          <div class="category-content">
+            <h3>T-SHIRTS</h3>
+            <span>SHOP NOW →</span>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=85"
+            alt="Denim"
+          >
+
+          <div class="category-content">
+            <h3>DENIM</h3>
+            <span>SHOP NOW →</span>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85"
+            alt="Shirts"
+          >
+
+          <div class="category-content">
+            <h3>SHIRTS</h3>
+            <span>SHOP NOW →</span>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1000&q=85"
+            alt="Outerwear"
+          >
+
+          <div class="category-content">
+            <h3>OUTERWEAR</h3>
+            <span>SHOP NOW →</span>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= NEW ARRIVALS ================= -->
+    <section class="section products-section" id="new-arrivals">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow dark">JUST DROPPED</p>
+          <h2>NEW ARRIVALS</h2>
+        </div>
+
+        <a href="#" class="text-link">SHOP ALL →</a>
+
+      </div>
+
+
+      <div class="product-grid" id="productGrid">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-name="Essential Black Tee">
+
+          <div class="product-image">
+
+            <span class="badge">NEW</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"
+              alt="Essential Black Tee"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Essential Black Tee"
+              data-price="2499"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>ESSENTIAL BLACK TEE</h3>
+              <p>Premium Cotton</p>
+            </div>
+
+            <strong>PKR 2,499</strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-name="Relaxed Denim">
+
+          <div class="product-image">
+
+            <span class="badge">NEW</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85"
+              alt="Relaxed Denim"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Relaxed Denim"
+              data-price="4999"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>RELAXED DENIM</h3>
+              <p>Relaxed Fit</p>
+            </div>
+
+            <strong>PKR 4,999</strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card" data-name="Oversized White Shirt">
+
+          <div class="product-image">
+
+            <span class="badge">NEW</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85"
+              alt="Oversized White Shirt"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Oversized White Shirt"
+              data-price="3499"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>OVERSIZED WHITE SHIRT</h3>
+              <p>Premium Poplin</p>
+            </div>
+
+            <strong>PKR 3,499</strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-name="Utility Jacket">
+
+          <div class="product-image">
+
+            <span class="badge sale">SALE</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85"
+              alt="Utility Jacket"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Utility Jacket"
+              data-price="5999"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>UTILITY JACKET</h3>
+              <p>Heavyweight Cotton</p>
+            </div>
+
+            <strong>PKR 5,999</strong>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= COLLECTION BANNER ================= -->
+    <section class="collection-banner" id="collections">
+
+      <img
+        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=2200&q=90"
+        alt="Bespoke Collection"
+      >
+
+      <div class="collection-overlay"></div>
+
+      <div class="collection-content">
+
+        <p class="eyebrow">AUTUMN / WINTER 2026</p>
+
+        <h2>THE ESSENTIAL<br>COLLECTION</h2>
+
+        <p>
+          Minimal silhouettes. Elevated fabrics.
+          Made to become part of your everyday.
+        </p>
+
+        <a href="#new-arrivals" class="btn btn-white">
+          EXPLORE COLLECTION
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BEST SELLERS ================= -->
+    <section class="section products-section" id="best-sellers">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow dark">CUSTOMER FAVOURITES</p>
+          <h2>BEST SELLERS</h2>
+        </div>
+
+        <a href="#" class="text-link">VIEW ALL →</a>
+
+      </div>
+
+
+      <div class="product-grid">
+
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1583743814966-8936f37f3846?auto=format&fit=crop&w=900&q=85"
+              alt="Classic Black T-Shirt"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Classic Black T-Shirt"
+              data-price="2299"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>CLASSIC BLACK TEE</h3>
+              <p>Heavyweight Cotton</p>
+            </div>
+
+            <strong>PKR 2,299</strong>
+
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85"
+              alt="Classic Shirt"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Classic Shirt"
+              data-price="3799"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>CLASSIC SHIRT</h3>
+              <p>Relaxed Fit</p>
+            </div>
+
+            <strong>PKR 3,799</strong>
+
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=900&q=85"
+              alt="Cargo Pants"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Cargo Pants"
+              data-price="4499"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>UTILITY CARGO</h3>
+              <p>Relaxed Fit</p>
+            </div>
+
+            <strong>PKR 4,499</strong>
+
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85"
+              alt="Overshirt"
+            >
+
+            <button
+              class="quick-add"
+              data-name="Premium Overshirt"
+              data-price="3999"
+            >
+              QUICK ADD
+            </button>
+
+          </div>
+
+          <div class="product-info">
+
+            <div>
+              <h3>PREMIUM OVERSHIRT</h3>
+              <p>Structured Cotton</p>
+            </div>
+
+            <strong>PKR 3,999</strong>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BRAND STATEMENT ================= -->
+    <section class="brand-statement">
+
+      <div class="statement-inner">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>
+          WE DON'T DESIGN<br>
+          FOR EVERYONE.
+        </h2>
+
+        <p class="statement-text">
+          BESPOKE is built around individuality.
+          Clean designs, quality materials and timeless
+          silhouettes for people who create their own rules.
+        </p>
+
+        <a href="#" class="btn btn-black">
+          OUR STORY
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="reviews section">
+
+      <div class="section-heading centered">
+
+        <div>
+          <p class="eyebrow dark">THE BESPOKE COMMUNITY</p>
+          <h2>WHAT THEY SAY</h2>
+        </div>
+
+      </div>
+
+
+      <div class="review-grid">
+
+        <div class="review">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "The quality is honestly next level.
+            The fit and fabric feel premium."
+          </p>
+
+          <strong>— HAMZA A.</strong>
+
+        </div>
+
+
+        <div class="review">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Minimal, clean and exactly what
+            I was looking for. Definitely ordering again."
+          </p>
+
+          <strong>— AYESHA K.</strong>
+
+        </div>
+
+
+        <div class="review">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            "Fast delivery and the clothes look
+            even better in person."
+          </p>
+
+          <strong>— USMAN R.</strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+
+      <div>
+
+        <p class="eyebrow">STAY IN THE LOOP</p>
+
+        <h2>JOIN THE BESPOKE WORLD.</h2>
+
+        <p>
+          Get first access to new drops, exclusive
+          releases and private offers.
+        </p>
+
+      </div>
+
+
+      <form id="newsletterForm">
+
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Enter your email address"
+          required
+        >
+
+        <button type="submit">
+          SUBSCRIBE
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= CART DRAWER ================= -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+      <h2>YOUR CART</h2>
+
+      <button id="closeCart">×</button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+
+      <div class="empty-cart">
+        Your cart is empty.
+      </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>SUBTOTAL</span>
+        <strong id="cartTotal">PKR 0</strong>
+
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        CHECKOUT
+      </button>
+
+      <p class="shipping-note">
+        Shipping calculated at checkout.
+      </p>
+
+    </div>
+
+  </aside>
+
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#" class="footer-logo">BESPOKE</a>
+
+        <p>
+          Contemporary clothing for
+          people who define their own style.
+        </p>
+
+        <div class="socials">
+
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TK</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>SHOP</h4>
+
+        <a href="#new-arrivals">New Arrivals</a>
+        <a href="#best-sellers">Best Sellers</a>
+        <a href="#">T-Shirts</a>
+        <a href="#">Denim</a>
+        <a href="#">Shirts</a>
+        <a href="#">Outerwear</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>HELP</h4>
+
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping & Delivery</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Size Guide</a>
+        <a href="#">FAQs</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>ABOUT</h4>
+
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Journal</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>© 2026 BESPOKE. ALL RIGHTS RESERVED.</p>
+
+      <p>MADE WITH INTENTION.</p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    Added to cart
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
